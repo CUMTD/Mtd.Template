@@ -1,0 +1,39 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>Mtd Class Library Template</Name>
+    <Description>Template for creating a basic class library with MTD standard github workflows and configuration.</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>Mtd.</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <CreateInPlace>true</CreateInPlace>
+    <Icon>__TemplateIcon.png</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="Mtd.Template.csproj" File="Mtd.Template.csproj" ReplaceParameters="true">
+      <Folder Name=".github" TargetFolderName=".github">
+        <Folder Name="workflows" TargetFolderName="workflows">
+          <ProjectItem ReplaceParameters="true" TargetFileName="build-test.yml">build-test.yml</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="codeql.yml">codeql.yml</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="publish-release.yml">publish-release.yml</ProjectItem>
+        </Folder>
+        <ProjectItem ReplaceParameters="false" TargetFileName="dependabot.yml">dependabot.yml</ProjectItem>
+      </Folder>
+      <Folder Name=".vs" TargetFolderName=".vs" />
+      <ProjectItem ReplaceParameters="false" TargetFileName=".editorconfig">.editorconfig</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName=".gitattributes">.gitattributes</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName=".gitignore">.gitignore</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Directory.Packages.props">Directory.Packages.props</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="icon.png">icon.png</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="icon.png">vstg0001.png</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="nuget.config">nuget.config</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="readme.md">readme.md</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="readme.md">vstg0002.md</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>
