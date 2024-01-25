@@ -33,7 +33,7 @@
       <ProjectItem ReplaceParameters="false" TargetFileName="icon.png">vstg0001.png</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="nuget.config">nuget.config</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="readme.md">readme.md</ProjectItem>
-      <ProjectItem ReplaceParameters="false" TargetFileName="readme.md">vstg0002.md</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="readme.md">vstg0002.md</ProjectItem>
     </Project>
   </TemplateContent>
 </VSTemplate>
